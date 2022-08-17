@@ -18,10 +18,10 @@ return new class extends Migration
             $table->string('first_name');
             $table->string('last_name');
             $table->string('phone')->unique();
-            $table->string('username');
+            $table->string('username')->nullable();
             $table->string('telegram_id');
             $table->string('password');
-            $table->date('birthday');
+            $table->time('birthday');
             $table->timestamps();
         });
     }
